@@ -58,7 +58,7 @@ class HBNBCommand(cmd.Cmd):
         return True
 
     def do_EOF(self, args):
-        """EOF signal to exit the program (Ctrl-d)"""
+        """EOF signal to exit the program"""
         print("")
         return True
 
@@ -80,7 +80,7 @@ class HBNBCommand(cmd.Cmd):
                 if cmnd[0] in argsdict.keys():
                     call = "{} {}".format(arg[0], cmnd[1])
                     return argsdict[cmnd[0]](call)
-        print("** Uknown syntax: {}".format(arg))
+        print("** Unknown syntax: {}".format(arg))
         return False
 
     def do_create(self, args):
