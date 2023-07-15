@@ -1,13 +1,14 @@
 #!/usr/bin/python3
-from models.base_model import BaseModel
 """Class that
 represent
 the state"""
 
+from models.base_model import BaseModel
+
 
 class State(BaseModel):
 
-    """Initialize state class
+    """state class
     instance
     of basemodel class"""
 
