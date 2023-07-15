@@ -1,13 +1,14 @@
 #!/usr/bin/python3
-from models.base_model import BaseModel
 """Class that
 represent
 a Place"""
 
+from models.base_model import BaseModel
+
 
 class Place(BaseModel):
 
-    """Initialize  place class
+    """place class
     instance
     of basemodel class"""
     city_id = ''

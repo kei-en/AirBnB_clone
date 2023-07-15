@@ -1,13 +1,13 @@
 #!/usr/bin/python3
-from models.base_model import BaseModel
-
 """Class that
 represent
 the user"""
 
+from models.base_model import BaseModel
+
 
 class User(BaseModel):
-    """Initialize user class
+    """User class
     instance
     of basemodel class"""
 
