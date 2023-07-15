@@ -11,11 +11,11 @@ class BaseModel:
 
     def __init__(self, *args, **kwargs):
         """Type initialize"""
-        tformat = "%Y-%m-%dT%H:%M:%S.%f"
+        timeformat = "%Y-%m-%dT%H:%M:%S.%f"
         if len(kwargs) != 0:
             for key, val in kwargs.items():
                 if key == "created_at" or key == "updated_at":
-                    setattr(self, key, datetime.strptime(val, tformat))
+                    setattr(self, key, datetime.strptime(val, timeformat))
                 elif key != '__class__':
                     setattr(self, key, val)
         else:
